@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleAnimationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bp4-Ue-SWf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-V1-vN4">
+                                <rect key="frame" x="122.5" y="268.5" width="130" height="130"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.31764705879999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fa8-V1-vN4" secondAttribute="height" multiplier="1:1" id="VT9-qw-GvG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fa8-V1-vN4" firstAttribute="centerY" secondItem="Bp4-Ue-SWf" secondAttribute="centerY" id="2zM-TQ-i85"/>
+                            <constraint firstItem="fa8-V1-vN4" firstAttribute="centerX" secondItem="Bp4-Ue-SWf" secondAttribute="centerX" id="H3y-zu-F4L"/>
+                            <constraint firstItem="fa8-V1-vN4" firstAttribute="width" secondItem="Bp4-Ue-SWf" secondAttribute="width" multiplier="130:375" id="x9V-fV-eJg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ypo-D0-rDw"/>
+                    </view>
+                    <connections>
+                        <outlet property="testView" destination="fa8-V1-vN4" id="1kK-QE-aBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
